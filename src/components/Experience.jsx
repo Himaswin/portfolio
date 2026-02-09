@@ -19,7 +19,7 @@ const Experience = () => {
       logo: outlierLogo
     },
     {
-      title: 'Software Developer Intern',
+      title: 'Software Engineer Intern',
       company: 'Whoolab',
       period: 'Jan 2024 - Aug 2024',
       logo: whoolabLogo

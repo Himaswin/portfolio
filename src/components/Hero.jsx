@@ -15,7 +15,7 @@ const Hero = ({ scrollToSection }) => {
       </div>
       
       <p className="hero-subtitle">
-        Software Developer • Creative Technologist • Problem Solver
+        Software Engineer • Creative Technologist • Problem Solver
       </p>
       
       <div className="hero-cta">
