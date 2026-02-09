@@ -16,7 +16,7 @@ const Contact = () => {
         </p>
         
         <div className="contact-links">
-          <a href="mailto:polaboyenahimaswin@gmail.com" className="contact-link">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=polaboyenahimaswin@gmail.com" className="contact-link">
             <Mail size={24} />
           </a>
           <a href="https://github.com/Himaswin" className="contact-link" target="_blank" rel="noopener noreferrer">
