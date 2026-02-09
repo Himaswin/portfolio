@@ -1,0 +1,145 @@
+.experience-section {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -3.5rem;
+  top: 2.5rem;
+  width: 16px;
+  height: 16px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: 3px solid var(--bg-dark);
+  box-shadow: 0 0 20px var(--accent-primary);
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+  border-color: var(--accent-primary);
+}
+
+/* New Layout - Logo on left, text on right */
+.experience-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.company-logo {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.timeline-item:hover .company-logo {
+  border-color: var(--accent-primary);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.experience-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.timeline-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.timeline-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.timeline-period {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  opacity: 0.8;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .experience-section {
+    padding: 4rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    left: -2.5rem;
+  }
+
+  .company-logo {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .timeline-period {
+    font-size: 0.8rem;
+  }
+}
